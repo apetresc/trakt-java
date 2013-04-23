@@ -113,13 +113,8 @@ public class UserServiceTest extends BaseTestCase {
 		
 		TvShow show = shows.get(0);
 		assertNotNull("Show was null.", show);
-		assertEquals("Show title does not match.", "South Park", show.title);
 		assertNotNull("Show year was null.", show.year);
-		assertEquals("Show year does not match.", 1997, show.year.intValue());
 		assertNotNull("Show URL was null.", show.url);
-		assertEquals("Show IMDB ID does not match.", "tt0121955", show.imdbId);
-		assertEquals("Show TVDB ID does not match.", "75897", show.tvdbId);
-		assertEquals("Show TV Rage ID does not match.", "5266", show.tvrageId);
 		assertNotNull("Show images was null.", show.images);
 		assertNotNull("Show poster image was null.", show.images.poster);
 		assertNotNull("Show fanart image was null.", show.images.fanart);
